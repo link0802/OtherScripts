@@ -24,3 +24,6 @@ Usage:
     opencode-free --model opencode/big-pickle "..."   # force a specific model
 
 Any flags you do not recognise are passed straight through to `opencode run`.
+
+## editOllama.sh
+edit all local ollama models,create temp modelfile, edit context (or any other parameter/name) using bash. 
