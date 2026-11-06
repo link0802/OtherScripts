@@ -26,4 +26,9 @@ Usage:
 Any flags you do not recognise are passed straight through to `opencode run`.
 
 ## editOllama.sh
+
 edit all local ollama models,create temp modelfile, edit context (or any other parameter/name) using bash. 
+
+## hermesDailyBackup.sh 
+
+Daily backup local Hermes agent data to dropbox folder. Keep only fresh 3 backups. Notify user using telegram token.
