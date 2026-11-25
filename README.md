@@ -24,3 +24,7 @@ Usage:
     opencode-free --model opencode/big-pickle "..."   # force a specific model
 
 Any flags you do not recognise are passed straight through to `opencode run`.
+
+## charge_notif.sh
+
+charge_notif.sh - notify user about AC connect/disconnect on laptop using sound and telegram message (token from hermes .env)
