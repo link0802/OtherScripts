@@ -38,3 +38,9 @@ Any flags you do not recognise are passed straight through to `opencode run`.
 **memory-health-check.sh** : check memory status/size every day.
 
 **weekly-housekeeping.sh + weekly-skill-consolidation.sh** : Weekly skill, memory and etc cleanup,review and consolidation.
+
+## Remount USB external HDD to server after sudden disconnect
+
+**nb-hdd-auto.sh** - Runs when the HDD partition appears (udev rule 99-hdd-automount.rules). Mounts the HDD and brings Docker/Syncthing back if they were knocked out.
+**nb-hdd-remount.sh** - Remount (using _systemctl_) the HDD after it was physically reinserted, then restart dependents.
+**nb-hdd-watch.sh** - HDD watchdog: keeps /mnt/hdd mounted and Docker/Syncthing running. Runs every 2 minutes from nb-hdd-watch.timer.
