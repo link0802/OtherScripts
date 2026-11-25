@@ -37,10 +37,7 @@ Edit local ollama models (parameters or properties) and/or rename them
 
 **nb-backup.sh** : Daily restic backup: OS drive (tag "system") + data disk (tag "data"). Repository lives on the HDD at /mnt/hdd/backups/restic-repo, capped at ~90 GiB.
 
--
-
 ## py
-
 
 ### opencode-free.py
 
@@ -59,7 +56,6 @@ Usage:
 
 Any flags you do not recognise are passed straight through to `opencode run`.
 
--
 ## js
 
 ### youtube-remove-video-from-WatchLater.js
