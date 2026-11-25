@@ -1,7 +1,7 @@
 # OtherScripts
 Simple, small, but useful scripts. 
 
-## sh
+## /sh/
 
 ### editOllama.sh 
 
@@ -37,11 +37,11 @@ Edit local ollama models (parameters or properties) and/or rename them
 
 **nb-backup.sh** : Daily restic backup: OS drive (tag "system") + data disk (tag "data"). Repository lives on the HDD at /mnt/hdd/backups/restic-repo, capped at ~90 GiB.
 
-## py
+## /py/
 
 ### opencode-free.py
 
-**opencode-free** : run OpenCode with automatic failover across free cloud models.
+**opencode-free** : run OpenCode with automatic fail-over across free cloud models.
 
 Every model in the default ladder is on a $0 tier. When one hits its quota
 (429 / rate limit / transport error), the next one takes over, so a long task
@@ -54,9 +54,9 @@ Usage:
     opencode-free --list            # show the ladder
     opencode-free --model opencode/big-pickle "..."   # force a specific model
 
-Any flags you do not recognise are passed straight through to `opencode run`.
+Any flags you do not recognize are passed straight through to `opencode run`.
 
-## js
+## /js/
 
 ### youtube-remove-video-from-WatchLater.js
 
