@@ -1,9 +1,8 @@
 # OtherScripts
 Simple, small, but useful scripts. 
 
----
 ## sh
----
+-
 
 ### editOllama.sh 
 
@@ -43,7 +42,6 @@ Edit local ollama models (parameters or properties) and/or rename them
 
 ## py
 
----
 
 ### opencode-free.py
 
@@ -64,7 +62,6 @@ Any flags you do not recognise are passed straight through to `opencode run`.
 
 ---
 ## js
----
 
 ### youtube-remove-video-from-WatchLater.js
 
