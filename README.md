@@ -10,7 +10,7 @@ var videoCount = 500; // total number of videos
 
 ## opencode-free.py
 
-opencode-free - run OpenCode with automatic failover across free cloud models.
+**opencode-free** : run OpenCode with automatic failover across free cloud models.
 
 Every model in the default ladder is on a $0 tier. When one hits its quota
 (429 / rate limit / transport error), the next one takes over, so a long task
@@ -27,4 +27,14 @@ Any flags you do not recognise are passed straight through to `opencode run`.
 
 ## charge_notif.sh
 
-charge_notif.sh - notify user about AC connect/disconnect on laptop using sound and telegram message (token from hermes .env)
+**charge_notif.sh** : notify user about AC connect/disconnect on laptop using sound and telegram message (token from hermes .env)
+
+## Hermes AI housekeeping scripts
+
+**daily-backup.sh** : daily backup to Dropbox in zip archive, keep only recent 3. 
+
+**hindsight-backup.sh** : backup of long-term memory - hindsight.
+
+**memory-health-check.sh** : check memory status/size every day.
+
+**weekly-housekeeping.sh + weekly-skill-consolidation.sh** : Weekly skill, memory and etc cleanup,review and consolidation.
