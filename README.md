@@ -1,6 +1,9 @@
 # OtherScripts
 Simple, small, but useful scripts. 
 
+## editOllama.sh 
+
+Edit local ollama models (parameters or properties) and/or rename them 
 
 ## youtube-remove-video-from-WatchLater.js
 
@@ -39,8 +42,16 @@ Any flags you do not recognise are passed straight through to `opencode run`.
 
 **weekly-housekeeping.sh + weekly-skill-consolidation.sh** : Weekly skill, memory and etc cleanup,review and consolidation.
 
-## Remount USB external HDD to server after sudden disconnect
 
-**nb-hdd-auto.sh** - Runs when the HDD partition appears (udev rule 99-hdd-automount.rules). Mounts the HDD and brings Docker/Syncthing back if they were knocked out.
-**nb-hdd-remount.sh** - Remount (using _systemctl_) the HDD after it was physically reinserted, then restart dependents.
-**nb-hdd-watch.sh** - HDD watchdog: keeps /mnt/hdd mounted and Docker/Syncthing running. Runs every 2 minutes from nb-hdd-watch.timer.
+## External USB-HDD operations
+
+###### Remount USB external HDD to server after sudden disconnect
+
+**nb-hdd-auto.sh** : Runs when the HDD partition appears (udev rule 99-hdd-automount.rules). Mounts the HDD and brings Docker/Syncthing back if they were knocked out.
+**nb-hdd-remount.sh** : Remount (using _systemctl_) the HDD after it was physically reinserted, then restart dependents.
+**nb-hdd-watch.sh** : HDD watchdog: keeps /mnt/hdd mounted and Docker/Syncthing running. Runs every 2 minutes from nb-hdd-watch.timer.
+**nb-hdd-usb-reset.sh** : Runs when the HDD partition disappears. If the disk is plugged back in but the USB port is stuck (kernel shows no device at all), reset the root hub so the bridge re-enumerates; the add-event rule then mounts it and restarts Docker/Syncthing.
+
+###### Backup
+
+**nb-backup.sh** : Daily restic backup: OS drive (tag "system") + data disk (tag "data"). Repository lives on the HDD at /mnt/hdd/backups/restic-repo, capped at ~90 GiB.
